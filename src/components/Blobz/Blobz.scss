@@ -1,0 +1,57 @@
+.shape-blob {
+	background:#fdd25d;
+	height: 40vw;
+	width: 40vw;
+	border-radius: 30% 50% 20% 40%;
+	animation: transform 20s ease-in-out infinite both alternate, blob-turn;
+	position: absolute;
+  z-index: 1;
+}
+.shape-blob.one{
+	background:#ff4b82;
+	height: 38vw;
+	width: 38vw;
+	transform: rotate(-180deg);
+	animation: transform 30s ease-in-out infinite both alternate, blob-turn;
+}
+
+.shape-blob.two{
+	background:#7600f8;
+	height: 36vw;
+	width: 36vw;
+	transform: rotate(-150deg);
+	animation: transform 30s ease-in-out infinite both alternate, blob-turn;
+}
+
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+}
+
+@keyframes blob-turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes movement_one
+{
+    0%,
+  100% { transform: none; }
+   50% { transform: translate(50%, 20%) rotateY(10deg) scale(1.2); }
+}
+
+@keyframes movement_two
+{
+    0%,
+  500% { transform: none; }
+   50% { transform: translate(50%, 20%) rotate(-200deg) scale(1.2);}
+}
