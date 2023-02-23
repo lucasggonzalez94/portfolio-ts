@@ -1,5 +1,5 @@
-import Container from "../../components/Container/Container";
-import Text from "../../components/Text/Text";
+import Container from "components/Container/Container";
+import Text from "components/Text/Text";
 
 
 export const AboutMe = () => {

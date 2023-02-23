@@ -2,12 +2,12 @@ import React from 'react';
 
 import './Banner.scss';
 
-import cv from '../../../static/data/CV.json';
+import cv from 'static/data/CV.json';
 
-import Blobz from '../../../components/Blobz/Blobz';
-import Button from '../../../components/Button/Button';
+import Blobz from 'components/Blobz/Blobz';
+import Button from 'components/Button/Button';
 
-import { downloadPDF } from '../../../utils/helpers';
+import { downloadPDF } from 'utils/helpers';
 
 const Banner = () => {
   return (

@@ -1,0 +1,156 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Banco Galicia",
+      "img": "galicia.png",
+      "description": "Proyecto en el que trabajo actualmente, desarrollando el módulo de transferencias para empresas. Utilizando React JS para el front y Nest JS para el BFF",
+      "gitUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "id": 2,
+      "title": "Banco Galicia (Midas)",
+      "img": "galicia.png",
+      "description": "Proyecto de backoffice de uso interno para Banco Galicia, en este proyecto trabajé en el módulo de configuración de límites. Utilizando React JS en el front.",
+      "gitUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "id": 3,
+      "title": "Backoffice Merck (Midas)",
+      "img": "merck.jpg",
+      "description": "Proyecto backoffice de análisis de fármacos anticonceptivos en el cuál se le configuraban instrucciones para los instrumentos y se generaban reportes, gráficos, etc. Utilizando React JS en el front.",
+      "gitUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "id": 4,
+      "title": "MEDLOG (Midas)",
+      "img": "medlog.jpg",
+      "description": "Proyecto de obtención y configuración de turnos para empresa transportadora de containers, desarrollo tanto para web pública, backoffice y tablet para el depósito. Utilizando React JS en el front.",
+      "gitUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "id": 5,
+      "title": "YPF YClick",
+      "img": "ypf.jpg",
+      "description": "Proyecto de backoffice para operarios de los pozos de YPF. Específicamente trabajé con el modulo de solicitud de servicios y materiales. Utilizando React JS en el front.",
+      "gitUrl": "",
+      "siteUrl": ""
+    },
+    {
+      "id": 6,
+      "title": "Buscador de autos",
+      "img": "buscador-autos.jpeg",
+      "description": "Buscador de autos obtenidos desde un objeto que simula una base de datos local, con distintos filtros de busqueda. Hecho con HTML, CSS y Javascript.",
+      "gitUrl": "https://github.com/lucasggonzalez94/BuscadorDeAutos",
+      "siteUrl": "https://buscador-autos-js.netlify.app/"
+    },
+    {
+      "id": 7,
+      "title": "Citas veterinaria",
+      "img": "citas-vete.jpeg",
+      "description": "Proyecto de registro de turnos para una veterinaria, Hecho principalmente con React JS.",
+      "gitUrl": "https://github.com/lucasggonzalez94/CitasConReact",
+      "siteUrl": "https://citas-vete-react.netlify.app/"
+    },
+    {
+      "id": 8,
+      "title": "Carrito de compras",
+      "img": "carrito.jpeg",
+      "description": "Modelo de una academia online de cursos de programación, el objetivo fue maquetar el sitio principal con HTML y CSS y agregar la funcionalidad del carrito de compras con JavaScript.",
+      "gitUrl": "https://github.com/lucasggonzalez94/carritoDeComprasPropio",
+      "siteUrl": "https://beprogrammer.netlify.app/"
+    },
+    {
+      "id": 9,
+      "title": "Cotizador de criptomonedas",
+      "img": "cripto.jpeg",
+      "description": "Proyecto de cotización de criptomonedas a monedas físicas, se utilizó la API CryptoCompare y JavaScript.",
+      "gitUrl": "https://github.com/lucasggonzalez94/Criptomonedas",
+      "siteUrl": "https://cotizador-criptomonedas-lucas.netlify.app/"
+    },
+    {
+      "id": 10,
+      "title": "Cotizador de criptomonedas (React JS)",
+      "img": "cripto-react.jpeg",
+      "description": "Proyecto de cotización de criptomonedas a monedas físicas, se utilizó la API CryptoCompare y React JS.",
+      "gitUrl": "https://github.com/lucasggonzalez94/criptomonedas-react",
+      "siteUrl": "https://criptomonedas-react-lucas.netlify.app/"
+    },
+    {
+      "id": 11,
+      "title": "Buscador de recetas de bebidas",
+      "img": "bebidas.jpeg",
+      "description": "Proyecto hecho React JS y consumiendo la API TheCocktailDB para consultar las recetas.",
+      "gitUrl": "https://github.com/lucasggonzalez94/bebidas",
+      "siteUrl": "https://bebidas-react-lucas.netlify.app/"
+    },
+    {
+      "id": 12,
+      "title": "Frases de Breacking Bad",
+      "img": "frases.jpeg",
+      "description": "Obteniendo frases de Breaking Bad con React JS y consumiento la api Breakingbadquotes.",
+      "gitUrl": "https://github.com/lucasggonzalez94/breakingbad",
+      "siteUrl": "https://breaking-bad-lucas.netlify.app/"
+    },
+    {
+      "id": 13,
+      "title": "Control de presupuesto",
+      "img": "gastos.jpg",
+      "description": "Proyecto de control de presupuesto hecho con React JS.",
+      "gitUrl": "https://github.com/lucasggonzalez94/presupuestoReact",
+      "siteUrl": "https://gastos-react.netlify.app/"
+    },
+    {
+      "id": 14,
+      "title": "Turnos peluquería",
+      "img": "peluqueria.jpeg",
+      "description": "Proyecto de administración de turnos para una peluquería, con conexión a base de datos MySQL.",
+      "gitUrl": "https://github.com/lucasggonzalez94/AppPeluqueria",
+      "siteUrl": "https://app-peluqueria-react.netlify.app/"
+    },
+    {
+      "id": 15,
+      "title": "Buscador GitHub Jobs",
+      "img": "github.jpeg",
+      "description": "Consumiento API de GitHub Jobs con React JS.",
+      "gitUrl": "https://github.com/lucasggonzalez94/GithubJobs",
+      "siteUrl": "https://github-jobs-lucas.netlify.app/"
+    },
+    {
+      "id": 16,
+      "title": "Buscador de letras",
+      "img": "letras.jpeg",
+      "description": "Buscador de letras de canciones consumiento APIs lyrics y TheAudioDB con React JS.",
+      "gitUrl": "https://github.com/lucasggonzalez94/letras-react",
+      "siteUrl": "https://buscador-letras-react-lucas.netlify.app/"
+    },
+    {
+      "id": 17,
+      "title": "Cotizador de seguros",
+      "img": "seguros.jpeg",
+      "description": "Cotizador de seguros para autos, tiene en cuenta el modelo, region del fabricante de la marca y tipo de plan. Hecho con React JS.",
+      "gitUrl": "https://github.com/lucasggonzalez94/cotizadorSeguros",
+      "siteUrl": "https://cotizador-seguros-react-lucas.netlify.app/"
+    },
+    {
+      "id": 18,
+      "title": "Festival de Rock",
+      "img": "festival.jpeg",
+      "description": "Proyecto utilizando HTML, SASS, JavaScript y funciones de Gulp.",
+      "gitUrl": "https://github.com/lucasggonzalez94/FestivalDeMusicaDeployment",
+      "siteUrl": "https://festival-rock.netlify.app/"
+    },
+    {
+      "id": 19,
+      "title": "Gestión de alumnos",
+      "img": "gestion.jpg",
+      "description": "Gestión de alumnos e inscripciones para una universidad. Codificado en Java, librería Swing, MySQL como base de datos y usando el patrón MVC.",
+      "gitUrl": "https://github.com/lucasggonzalez94/GestorInscripcionesUniversidad",
+      "siteUrl": ""
+    }
+  ]
+}

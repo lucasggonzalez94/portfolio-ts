@@ -1,6 +1,8 @@
-import Background from "../../components/Background/Background";
-import { AboutMe } from "../AboutMe/AboutMe";
-import Banner from "./Banner/Banner";
+import Background from "components/Background/Background";
+import { AboutMe } from "pages/AboutMe/AboutMe";
+import Projects from "pages/Projects/Projects";
+import Banner from "pages/Banner/Banner";
+import FormEmail from "pages/FormEmail/FormEmail";
 
 export const Portfolio = () => {
   return (
@@ -8,8 +10,8 @@ export const Portfolio = () => {
       <Background/>
       <Banner />
       <AboutMe/>
-      {/* <Projects/> */}
-      {/* <FormEmail/> */}
+      <Projects/>
+      <FormEmail/>
     </>
   );
 };

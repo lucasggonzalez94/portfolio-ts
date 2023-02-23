@@ -1,4 +1,5 @@
-import React from 'react';
+import {FC} from 'react';
+
 import './Container.scss';
 
 type ContainerTypes = {
@@ -8,7 +9,7 @@ type ContainerTypes = {
   center?: boolean;
 }
 
-const Container: React.FC<ContainerTypes> = ({title, children, fill, center}) => {
+const Container: FC<ContainerTypes> = ({title, children, fill, center}) => {
   return (
     <div className={`section ${fill && 'fill'} ${center ? 'center' : ''}`}>
       {title && <h2 className='title'>{title}</h2>}
