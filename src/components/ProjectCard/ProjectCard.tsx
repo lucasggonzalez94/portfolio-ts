@@ -4,7 +4,6 @@ import './ProjectCard.scss';
 
 import { navigateToUrl } from 'utils/helpers';
 
-import Tooltip from 'components/Tooltip/Tooltip';
 import Button from 'components/Button/Button';
 
 type ProjectCardTypes = {
