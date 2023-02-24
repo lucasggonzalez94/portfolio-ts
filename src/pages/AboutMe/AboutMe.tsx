@@ -4,7 +4,7 @@ import Text from "components/Text/Text";
 
 export const AboutMe = () => {
   return (
-    <Container fill title="Sobre mí">
+    <Container title="Sobre mí">
       <Text
         text='Soy un desarrollador web altamente capacitado con casi 2 años de experiencia en el desarrollo de aplicaciones en tecnologías como React JS y Nest JS. Tengo experiencia en el trabajo dentro del marco de trabajo SCRUM y estoy comprometido a seguir aprendiendo y mejorando mis habilidades.'
       />

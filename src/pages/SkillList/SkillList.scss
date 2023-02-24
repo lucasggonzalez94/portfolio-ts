@@ -1,0 +1,30 @@
+.skill-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.625rem;
+}
+
+.skill-name {
+  width: 6.25rem;
+  font-weight: 600;
+}
+
+.skill-bar {
+  height: 1.2rem;
+  width: 12.5rem;
+  background-color: #afafaf;
+  margin-left: 0.625rem;
+  border: 2px solid #000;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background-color: #4d0d91;
+}

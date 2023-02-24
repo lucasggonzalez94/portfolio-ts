@@ -55,3 +55,32 @@
   500% { transform: none; }
    50% { transform: translate(50%, 20%) rotate(-200deg) scale(1.2);}
 }
+
+@media (max-width: 768px) {
+  .shape-blob {
+    height: 80vw;
+    width: 80vw;
+  }
+  .shape-blob.one{
+    height: 77vw;
+    width: 77vw;
+  }
+  .shape-blob.two{
+    height: 74vw;
+    width: 74vw;
+  }
+}
+@media (min-width: 1000px) {
+  .shape-blob {
+    height: 50vw;
+    width: 50vw;
+  }
+  .shape-blob.one{
+    height: 47vw;
+    width: 47vw;
+  }
+  .shape-blob.two{
+    height: 44vw;
+    width: 44vw;
+  }
+}
