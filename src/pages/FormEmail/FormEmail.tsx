@@ -92,7 +92,11 @@ const FormEmail = () => {
           value={formData.message}
           onChange={handleChange}
         />
-        <Button text="Enviar e-mail" onClick={handleSubmit} />
+        <Button
+          text="Enviar e-mail"
+          onClick={handleSubmit}
+          variant="secondary"
+        />
       </form>
       <CustomLink
         icon={<LinkedInLogo />}

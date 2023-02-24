@@ -1,48 +1,86 @@
-button {
-  position: relative;
-  padding: .5rem .8rem;
-  cursor: pointer;
-  font-weight: 600;
-  display: inline-block;
-  border-radius: 2rem;
-}
+$color-primary: #fff;
+$color-secondary: #1e222e;
 
 .button {
-  transition: .5s;
-  &.border-primary {
-    background-color: transparent;
-    border: 0.15rem solid #fff;
-    color: #fff;
-  }
-  &.border-secondary {
-    background-color: transparent;
-    border: 0.15rem solid #000;
-    color: #000;
-  }
-  &.primary {
-    background-color: #fff;
-    color: #000;
-  }
-  &.secondary {
-    background-color: #000;
-    color: #fff;
-  }
-  &.border-primary:hover {
-    background-color: #fff;
-    border: 0.15rem solid #fff;
-    color: #000;
-  }
-  &.border-secondary:hover {
-    background-color: #000;
-    border: 0.15rem solid #000;
-    color: #fff;
-  }
-  &.primary:hover {
-    background-color: #a7a7a7;
-    color: #000;
-  }
-  &.secondary:hover {
-    background-color: #383838;
-    color: #fff;
-  }
+	position: relative;
+	padding: 0.5rem 0.8rem;
+	cursor: pointer;
+	font-weight: 600;
+	display: inline-block;
+	border-radius: 2rem;
+	transition: 0.5s;
+	overflow: hidden;
+	max-width: 10rem;
+  z-index: 1;
+	&.primary {
+		color: $color-primary;
+		background-color: transparent;
+		border: 0.15rem solid $color-primary;
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			width: 50px;
+			height: 50px;
+			transform: translate(-50%, -50%);
+			position: absolute;
+			border-radius: 50%;
+			transition: 1s ease;
+			background-color: $color-primary;
+      z-index: -1;
+		}
+		&::before {
+			top: -1em;
+			left: -1em;
+		}
+		&::after {
+			left: calc(100% + 1em);
+			top: calc(100% + 1em);
+		}
+		&:hover::before,
+		&:hover::after {
+			height: 410px;
+			width: 410px;
+		}
+    &:hover {
+      color: $color-secondary;
+    }
+	}
+	&.secondary {
+		color: $color-secondary;
+		background-color: transparent;
+		border: 0.15rem solid $color-secondary;
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			width: 50px;
+			height: 50px;
+			transform: translate(-50%, -50%);
+			position: absolute;
+			border-radius: 50%;
+			transition: 1s ease;
+			background-color: $color-secondary;
+      z-index: -1;
+		}
+		&::before {
+			top: -1em;
+			left: -1em;
+		}
+		&::after {
+			left: calc(100% + 1em);
+			top: calc(100% + 1em);
+		}
+		&:hover::before,
+		&:hover::after {
+			height: 410px;
+			width: 410px;
+		}
+    &:hover {
+      color: $color-primary;
+    }
+	}
+	&:active {
+		filter: brightness(0.8);
+	}
 }

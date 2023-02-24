@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './Banner.scss';
 
 import cv from 'static/data/CV.json';
@@ -21,7 +19,6 @@ const Banner = () => {
         <Button
           text="Descargar CV"
           onClick={() => downloadPDF(cv.data, 'Curriculum Lucas Gonzalez')}
-          variant="border-primary"
           className='my-16'
         />
       </div>

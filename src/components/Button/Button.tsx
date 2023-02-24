@@ -6,7 +6,7 @@ type ButtonTypes = {
   text: string;
   onClick: (e: any) => void;
   className?: string;
-  variant?: 'border-primary' | 'border-secondary' | 'primary' | 'secondary';
+  variant?: 'primary' | 'secondary';
 }
 
 const Button: FC<ButtonTypes> = ({
@@ -17,7 +17,7 @@ const Button: FC<ButtonTypes> = ({
 }) => {
   return (
     <>
-      <button className={`button ${variant} ${className}`} onClick={onClick}>
+      <button className={`button ${variant}${className ? ` ${className}` : ''}`} onClick={onClick}>
         {text}
       </button>
     </>
