@@ -81,9 +81,7 @@ const ProjectCard: FC<ProjectCardTypes> = ({
 				<img src={img} alt={title} />
 				<div className='content-card'>
 					<h3>{title}</h3>
-					<Tooltip text={description}>
 						<p>{description}</p>
-					</Tooltip>
 					<div className='footer-card'>
 						{gitUrl ? (
 							<Button

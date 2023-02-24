@@ -37,16 +37,17 @@
     }
 
     p {
-      height: 5rem;
+      height: 6.5rem;
       margin: 0;
       padding: 0;
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-line-clamp: 4;
+      -webkit-line-clamp: 5;
       -webkit-box-orient: vertical;
       word-wrap: break-word;
       line-height: 1.3rem;
+      font-size: .8rem;
     }
 
     .footer-card {
