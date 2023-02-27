@@ -98,3 +98,14 @@
     font-weight: bold;
   }
 }
+
+@media (max-width: 1000px) {
+  .sidebar {
+    width: 30vw;
+  }
+}
+@media (max-width: 768px) {
+  .sidebar {
+    width: 50vw;
+  }
+}
