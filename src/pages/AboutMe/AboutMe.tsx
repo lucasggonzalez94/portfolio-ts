@@ -2,7 +2,7 @@ import Container from "components/Container/Container";
 import Text from "components/Text/Text";
 
 
-export const AboutMe = () => {
+const AboutMe = () => {
   return (
     <Container title="Sobre mí">
       <Text
@@ -20,3 +20,5 @@ export const AboutMe = () => {
     </Container>
   );
 };
+
+export default AboutMe;

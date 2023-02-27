@@ -2,15 +2,15 @@ import './Banner.scss';
 
 import cv from 'static/data/CV.json';
 
-import Blobz from 'components/Blobz/Blobz';
+import Blobs from 'components/Blobs/Blobs';
 import Button from 'components/Button/Button';
 
 import { downloadPDF } from 'utils/helpers';
 
 const Banner = () => {
   return (
-    <div className='banner'>
-      <Blobz />
+    <div className='banner' id='home'>
+      <Blobs />
       <div className="contain">
         <h1>Portfolio</h1>
         <h3>Lucas González</h3>

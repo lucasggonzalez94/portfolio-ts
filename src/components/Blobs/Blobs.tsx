@@ -1,6 +1,6 @@
-import './Blobz.scss';
+import './Blobs.scss';
 
-const Blobz = () => {
+const Blobs = () => {
   return (
     <>
       <div className="shape-blob"></div>
@@ -10,4 +10,4 @@ const Blobz = () => {
   );
 };
 
-export default Blobz;
+export default Blobs;

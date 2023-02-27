@@ -4,7 +4,7 @@ import ProjectsGrid from "components/ProjectsGrid/ProjectsGrid";
 
 const Projects = () => {
   return (
-    <Container title='Proyectos'>
+    <Container title='Proyectos' id="projects">
       <ProjectsGrid/>
     </Container>
   )

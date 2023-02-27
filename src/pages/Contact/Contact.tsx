@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import "./FormEmail.scss";
+import "./Contact.scss";
 
 import { ReactComponent as LinkedInLogo } from "static/icons/linkedin.svg";
 
@@ -8,7 +8,7 @@ import Container from "components/Container/Container";
 import Button from "components/Button/Button";
 import CustomLink from "components/CustomLink/CustomLink";
 
-const FormEmail = () => {
+const Contact = () => {
   const API_KEY = process.env.REACT_APP_SENDINBLUE;
 
   const [formData, setFormData] = useState({
@@ -70,7 +70,7 @@ const FormEmail = () => {
   };
 
   return (
-    <Container title="Contacto" fill>
+    <Container title="Contacto" id="contact">
       <form onSubmit={handleSubmit} className="form-email">
         <input
           type="text"
@@ -106,4 +106,4 @@ const FormEmail = () => {
   );
 };
 
-export default FormEmail;
+export default Contact;
