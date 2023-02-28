@@ -101,11 +101,13 @@
 
 @media (max-width: 1000px) {
   .sidebar {
+    left: -30vw;
     width: 30vw;
   }
 }
 @media (max-width: 768px) {
   .sidebar {
+    left: -50vw;
     width: 50vw;
   }
 }

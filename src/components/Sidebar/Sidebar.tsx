@@ -15,14 +15,14 @@ const Sidebar = () => {
     }
 	};
 
-  const toggleButton = () => {
-    const element = document.getElementById('sidebar');
-    element?.classList.toggle('active');
+  const toggleSidebar = () => {
+    const sidebar = document.getElementById('sidebar');
+    sidebar?.classList.toggle('active');
   };
 
 	return (
 		<nav className='sidebar' id='sidebar'>
-      <div className="toggle" onClick={toggleButton}></div>
+      <div className="toggle" onClick={toggleSidebar}></div>
 			<ul>
 				<li>
 					<Link

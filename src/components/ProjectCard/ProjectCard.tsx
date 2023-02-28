@@ -7,6 +7,7 @@ import { navigateToUrl } from 'utils/helpers';
 import Button from 'components/Button/Button';
 
 type ProjectCardTypes = {
+	key: number;
 	img: string;
 	title: string;
 	description: string;
