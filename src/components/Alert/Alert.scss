@@ -1,0 +1,41 @@
+.alert {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  min-height: 5rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  &.success {
+    background: #40ff2f;
+    .icon {
+      background: #088808;
+      svg {
+        fill: #40ff2f;
+      }
+    }
+  }
+  &.error {
+    background: #ff2d2d;
+    .icon {
+      background: #880808;
+      svg {
+        fill: #ff2d2d;
+      }
+    }
+    .messaje {
+      color: #fff;
+    }
+  }
+  .icon {
+    width: 4.5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .message {
+    margin: 1rem;
+  }
+}
