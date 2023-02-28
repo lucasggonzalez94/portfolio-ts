@@ -7,6 +7,7 @@ import Projects from "pages/Projects/Projects";
 import Banner from "pages/Banner/Banner";
 import Contact from "pages/Contact/Contact";
 import SkillList from "pages/SkillList/SkillList";
+import Footer from 'components/Footer/Footer';
 
 export const Portfolio = () => {
   return (
@@ -20,6 +21,7 @@ export const Portfolio = () => {
       </div>
       <Projects/>
       <Contact/>
+      <Footer/>
     </>
   );
 };
