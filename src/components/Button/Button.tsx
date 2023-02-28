@@ -1,27 +1,33 @@
-import { FC } from "react";
+import { FC } from 'react';
 
-import "./Button.scss";
+import './Button.scss';
 
 type ButtonTypes = {
-  text: string;
-  onClick: (e: any) => void;
-  className?: string;
-  variant?: 'primary' | 'secondary';
-}
+	content: string | React.ReactNode;
+	onClick: (e: any) => void;
+	className?: string;
+	variant?: 'primary' | 'secondary';
+  disabled?: boolean;
+};
 
 const Button: FC<ButtonTypes> = ({
-  text,
-  onClick,
-  className,
-  variant = 'primary'
+	content,
+	onClick,
+	className,
+	variant = 'primary',
+  disabled
 }) => {
-  return (
-    <>
-      <button className={`button ${variant}${className ? ` ${className}` : ''}`} onClick={onClick}>
-        {text}
-      </button>
-    </>
-  );
+	return (
+		<>
+			<button
+				className={`button ${variant} ${className ? ` ${className}` : ''}`}
+				onClick={onClick}
+        disabled={disabled}
+			>
+				{content}
+			</button>
+		</>
+	);
 };
 
 export default Button;

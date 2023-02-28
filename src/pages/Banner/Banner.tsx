@@ -17,7 +17,7 @@ const Banner = () => {
         <h4>Desarrollador Web</h4>
 
         <Button
-          text="Descargar CV"
+          content="Descargar CV"
           onClick={() => downloadPDF(cv.data, 'Curriculum Lucas Gonzalez')}
           className='my-16'
         />

@@ -7,12 +7,19 @@ $color-secondary: #1e222e;
 	cursor: pointer;
 	font-weight: 600;
 	font-size: 1rem;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-radius: 2rem;
 	transition: 0.5s;
 	overflow: hidden;
+	min-width: 8.125rem;
 	max-width: 10rem;
   z-index: 1;
+	&:disabled {
+		opacity: .6;
+		cursor: auto;
+	}
 	&.primary {
 		color: $color-primary;
 		background-color: transparent;
@@ -38,12 +45,12 @@ $color-secondary: #1e222e;
 			left: calc(100% + 1em);
 			top: calc(100% + 1em);
 		}
-		&:hover::before,
-		&:hover::after {
+		&:not(:disabled):hover::before,
+		&:not(:disabled):hover::after {
 			height: 25.625rem;
 			width: 25.625rem;
 		}
-    &:hover {
+    &:not(:disabled):hover {
       color: $color-secondary;
     }
 	}
@@ -72,12 +79,12 @@ $color-secondary: #1e222e;
 			left: calc(100% + 1em);
 			top: calc(100% + 1em);
 		}
-		&:hover::before,
-		&:hover::after {
+		&:not(:disabled):hover::before,
+		&:not(:disabled):hover::after {
 			height: 25.625rem;
 			width: 25.625rem;
 		}
-    &:hover {
+    &:not(:disabled):hover {
       color: $color-primary;
     }
 	}

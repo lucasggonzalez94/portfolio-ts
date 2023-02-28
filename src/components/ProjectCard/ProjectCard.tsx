@@ -86,14 +86,14 @@ const ProjectCard: FC<ProjectCardTypes> = ({
 						{gitUrl ? (
 							<Button
 								onClick={() => navigateToUrl(gitUrl)}
-								text='Repositorio'
+								content='Repositorio'
 								variant='secondary'
 							/>
 						) : null}
 						{siteUrl ? (
 							<Button
 								onClick={() => navigateToUrl(siteUrl)}
-								text='Ir al sitio'
+								content='Ir al sitio'
 								variant='secondary'
 							/>
 						) : null}

@@ -1,0 +1,30 @@
+.input {
+  width: 100%;
+	input,
+	textarea {
+		width: 100%;
+		padding: 0.5rem;
+		border-radius: 0.5rem;
+		resize: none;
+		margin-bottom: 0.1rem;
+		&:focus {
+			border: 2px solid #000;
+		}
+		&.error {
+			border: 1px solid #ff0000;
+		}
+	}
+
+	p {
+		width: 100%;
+		display: none;
+		color: #ff0000;
+		font-size: 0.75rem;
+		text-align: left;
+		padding-left: 0.5rem;
+	}
+
+	p.error {
+		display: inline-block;
+	}
+}

@@ -7,22 +7,67 @@ import { ReactComponent as LinkedInLogo } from "static/icons/linkedin.svg";
 import Container from "components/Container/Container";
 import Button from "components/Button/Button";
 import CustomLink from "components/CustomLink/CustomLink";
+import Loader from "components/Loader/Loader";
+import Input from "components/Input/Input";
+import { validateEmail } from "utils/helpers";
 
 const Contact = () => {
   const API_KEY = process.env.REACT_APP_SENDINBLUE;
 
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
+  const [errors, setErrors] = useState({
+    nameError: '',
+    emailError: '',
+    messageError: '',
+  })
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (
     e:
       | React.ChangeEvent<HTMLInputElement>
       | React.ChangeEvent<HTMLTextAreaElement>
   ) => {
+    handleErrors(e);
     setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleErrors = (
+    e:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
+    switch (e.target.name) {
+      case 'name':
+        setErrors({
+          ...errors,
+          nameError: e.target.value ? '' : 'El nombre es obligatorio'
+        });
+        break;
+      case 'email':
+        setErrors({
+          ...errors,
+          emailError: validateEmail(e.target.value) ? '' : 'Ingresa un e-mail válido'
+        });
+        break;
+      case 'message':
+        setErrors({
+          ...errors,
+          messageError: e.target.value ? '' : 'El mensaje debe tener contenido'
+        });
+        break;
+    
+      default:
+        setErrors({
+          nameError: '',
+          emailError: '',
+          messageError: '',
+        });
+        break;
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -30,6 +75,7 @@ const Contact = () => {
 
     try {
       if (API_KEY) {
+        setLoading(true);
         const response = await fetch(
           "https://api.sendinblue.com/v3/smtp/email",
           {
@@ -55,6 +101,7 @@ const Contact = () => {
         );
 
         const data = await response.json();
+        setLoading(false);
 
         if (data.messageId) {
           alert("Email sent successfully");
@@ -62,6 +109,7 @@ const Contact = () => {
         }
       }
     } catch (error) {
+      setLoading(false);
       console.error(error);
       alert(
         "An error occurred while sending the email. Please try again later."
@@ -69,33 +117,49 @@ const Contact = () => {
     }
   };
 
+  console.log(Object.entries(errors).some(entry => entry[1]))
+
   return (
     <Container title="Contacto" id="contact">
       <form onSubmit={handleSubmit} className="form-email">
-        <input
+        <Input
           type="text"
           name="name"
-          placeholder="Tu nombre"
+          placeholder="Tu nombre *"
           value={formData.name}
           onChange={handleChange}
+          onBlur={handleErrors}
+          error={!!errors.nameError}
+          errorMessage={errors.nameError}
         />
-        <input
+        <Input
           type="email"
           name="email"
-          placeholder="E-mail"
+          placeholder="E-mail *"
           value={formData.email}
           onChange={handleChange}
+          onBlur={handleErrors}
+          error={!!errors.emailError}
+          errorMessage={errors.emailError}
         />
-        <textarea
+        <Input
+          type="textarea"
           name="message"
-          placeholder="Mensaje"
+          placeholder="Mensaje *"
           value={formData.message}
           onChange={handleChange}
+          onBlur={handleErrors}
+          error={!!errors.messageError}
+          errorMessage={errors.messageError}
         />
         <Button
-          text="Enviar e-mail"
+          content={loading ? <Loader/> : 'Enviar e-mail'}
           onClick={handleSubmit}
           variant="secondary"
+          disabled={
+            !!Object.entries(errors).find(entry => entry[1] !== '') ||
+            !!Object.entries(formData).find(entry => entry[1] === '')
+          }
         />
       </form>
       <CustomLink

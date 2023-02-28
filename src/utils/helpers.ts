@@ -23,4 +23,9 @@ export const downloadPDF = (pdfBase64: string, nombreArchivo: string) => {
 
   // Liberar el objeto URL
   URL.revokeObjectURL(url);
+};
+
+export const validateEmail = (email: string): boolean => {
+  const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return regex.test(email);
 }
