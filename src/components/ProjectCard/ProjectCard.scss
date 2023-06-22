@@ -4,7 +4,7 @@
   transition: .5s;
   overflow: hidden;
   background: #000;
-  position: absolute;
+  position: relative;
   top: 2rem;
   left: 0;
 
@@ -20,7 +20,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: rgba(255, 255, 255, .9);
+    background: rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,7 +30,7 @@
     z-index: 10;
 
     h3 {
-      color: #000;
+      color: #FFF;
       text-align: center;
       font-size: 1rem;
       font-weight: 600;
@@ -61,77 +61,4 @@
       opacity: 1;
     }
   }
-}
-
-.window {
-  width: 21.875rem;
-  height: 16.4375rem;
-  background: lightgrey;
-  overflow: hidden;
-  display: flex;
-  position: relative;
-  border-radius: .5rem;
-}
-
-.circles,
-.browser {
-  height: 1.875rem;
-  display: flex;
-  align-items: center;
-}
-
-.circles {
-  width: 20%;
-  gap: 0.5rem;
-  padding: 0.625rem;
-}
-
-.c {
-  width: 0.5625rem;
-  height: 0.5625rem;
-  border-radius: 50%;
-  box-shadow: inset 0.125rem 0.125rem 0.3125rem rgba(235, 235, 235, 0.356);
-}
-
-.c:first-child {
-  background-color: red;
-}
-
-.c:nth-child(2) {
-  background-color: rgb(204, 167, 4);
-}
-
-.c:last-child {
-  background-color: green;
-}
-
-.browser {
-  width: 80%;
-  padding: 0.3125rem;
-  display: flex;
-  gap: 0.625rem;
-}
-
-.chevrons {
-  display: flex;
-}
-
-.search-bar {
-  position: relative;
-  border: 0.0313rem solid black;
-  border-radius: 0.3125rem;
-  padding: 0.3125rem;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.625rem;
-  color: rgb(88, 88, 88);
-  box-shadow: inset 0.125rem 0.125rem 0.125rem #05050525;
-}
-
-.search-bar svg {
-  position: absolute;
-  left: 0.625rem;
 }

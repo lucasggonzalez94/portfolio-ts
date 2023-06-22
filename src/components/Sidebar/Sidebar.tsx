@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import './Sidebar.scss';
 
-const Sidebar = () => {
+type SidebarTypes = {
+	active: boolean;
+};
+
+const Sidebar: FC<SidebarTypes> = ({active}) => {
 	const location = useLocation();
 	const [selectedId, setSelectedId] = useState('home');
 
@@ -17,12 +21,16 @@ const Sidebar = () => {
 
   const toggleSidebar = () => {
     const sidebar = document.getElementById('sidebar');
-    sidebar?.classList.toggle('active');
+    sidebar?.classList?.toggle('active');
   };
+
+	useEffect(() => {
+		toggleSidebar();
+	}, [active]);
+	
 
 	return (
 		<nav className='sidebar' id='sidebar'>
-      <div className="toggle" onClick={toggleSidebar}></div>
 			<ul>
 				<li>
 					<Link

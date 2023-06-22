@@ -8,11 +8,16 @@ import Banner from "pages/Banner/Banner";
 import Contact from "pages/Contact/Contact";
 import SkillList from "pages/SkillList/SkillList";
 import Footer from 'components/Footer/Footer';
+import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
+import { useState } from 'react';
 
 export const Portfolio = () => {
+  const [active, setActive] = useState(false);
+
   return (
     <>
-      <Sidebar/>
+      <BurgerMenu setActive={setActive} />
+      <Sidebar active={active}/>
       <Background/>
       <Banner />
       <div className="about-me" id='about'>

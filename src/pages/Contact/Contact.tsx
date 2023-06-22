@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './Contact.scss';
 
 import { ReactComponent as LinkedInLogo } from 'static/icons/linkedin.svg';
+import { ReactComponent as GitHubLogo } from 'static/icons/square-github.svg';
 
 import Container from 'components/Container/Container';
 import Button from 'components/Button/Button';
@@ -26,8 +27,8 @@ const Contact = () => {
 		messageError: ''
 	});
 	const [loading, setLoading] = useState(false);
-  const [showAlertSuccess, setShowAlertSuccess] = useState(false);
-  const [showAlertError, setShowAlertError] = useState(false);
+	const [showAlertSuccess, setShowAlertSuccess] = useState(false);
+	const [showAlertError, setShowAlertError] = useState(false);
 
 	const handleChange = (
 		e:
@@ -156,32 +157,38 @@ const Contact = () => {
 					<Button
 						content={loading ? <Loader /> : 'Enviar e-mail'}
 						onClick={handleSubmit}
-						variant='secondary'
+						variant='primary'
 						disabled={
 							!!Object.entries(errors).find(entry => entry[1] !== '') ||
 							!!Object.entries(formData).find(entry => entry[1] === '')
 						}
 					/>
 				</form>
-				<CustomLink
-					icon={<LinkedInLogo />}
-					url='https://www.linkedin.com/in/lucas-gonzalez-frontend'
-				/>
+				<div className="icons">
+					<CustomLink
+						icon={<LinkedInLogo />}
+						url='https://www.linkedin.com/in/lucas-gonzalez-frontend'
+					/>
+					<CustomLink
+						icon={<GitHubLogo />}
+						url='https://github.com/lucasggonzalez94'
+					/>
+				</div>
 			</Container>
-      {/* Alert de exito */}
-      <Alert
-        type='success'
-        message='El e-mail se envió con éxito'
-        show={showAlertSuccess}
-        setShow={setShowAlertSuccess}
-      />
-      {/* Alert de error */}
-      <Alert
-        type='error'
-        message='Hubo un error al enviar el e-mail'
-        show={showAlertError}
-        setShow={setShowAlertError}
-      />
+			{/* Alert de exito */}
+			<Alert
+				type='success'
+				message='El e-mail se envió con éxito'
+				show={showAlertSuccess}
+				setShow={setShowAlertSuccess}
+			/>
+			{/* Alert de error */}
+			<Alert
+				type='error'
+				message='Hubo un error al enviar el e-mail'
+				show={showAlertError}
+				setShow={setShowAlertError}
+			/>
 		</>
 	);
 };
