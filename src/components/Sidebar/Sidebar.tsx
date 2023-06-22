@@ -19,13 +19,17 @@ const Sidebar: FC<SidebarTypes> = ({active}) => {
     }
 	};
 
-  const toggleSidebar = () => {
+  const toggleSidebar = (active: boolean) => {
     const sidebar = document.getElementById('sidebar');
-    sidebar?.classList?.toggle('active');
+		if (active) {
+			sidebar?.classList?.add('active');
+		} else {
+			sidebar?.classList?.remove('active');
+		}
   };
 
 	useEffect(() => {
-		toggleSidebar();
+		toggleSidebar(active);
 	}, [active]);
 	
 
