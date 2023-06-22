@@ -43,7 +43,7 @@
     {
       "id": 6,
       "title": "Calendar App",
-      "img": "calendarApp.jpg",
+      "img": "CalendarApp.jpg",
       "description": "Proyecto de calendario donde se puede agregar eventos, utilizando React JS y Node.js",
       "gitUrl": "https://github.com/lucasggonzalez94/calendar-app",
       "siteUrl": "https://calendar-app-lucas.netlify.app/"
