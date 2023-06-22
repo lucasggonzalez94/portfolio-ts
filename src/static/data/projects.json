@@ -74,11 +74,11 @@
     },
     {
       "id": 10,
-      "title": "Cotizador de criptomonedas",
-      "img": "cripto.jpeg",
-      "description": "Proyecto de cotización de criptomonedas a monedas físicas, se utilizó la API CryptoCompare y JavaScript.",
-      "gitUrl": "https://github.com/lucasggonzalez94/Criptomonedas",
-      "siteUrl": "https://cotizador-criptomonedas-lucas.netlify.app/"
+      "title": "Buscador Pixabay",
+      "img": "pixabay.jpg",
+      "description": "Buscador de imagenes utilizando la API de Pixabay.",
+      "gitUrl": "https://github.com/lucasggonzalez94/pixabay-react",
+      "siteUrl": "https://buscador-pixabay.netlify.app/"
     },
     {
       "id": 11,
