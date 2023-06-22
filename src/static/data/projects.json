@@ -42,6 +42,14 @@
     },
     {
       "id": 6,
+      "title": "Calendar App",
+      "img": "calendarApp.jpg",
+      "description": "Proyecto de calendario donde se puede agregar eventos, utilizando React JS y Node.js",
+      "gitUrl": "https://github.com/lucasggonzalez94/calendar-app",
+      "siteUrl": "https://calendar-app-lucas.netlify.app/"
+    },
+    {
+      "id": 7,
       "title": "Buscador de autos",
       "img": "buscador-autos.jpeg",
       "description": "Buscador de autos obtenidos desde un objeto que simula una base de datos local, con distintos filtros de busqueda. Hecho con HTML, CSS y Javascript.",
@@ -49,7 +57,7 @@
       "siteUrl": "https://buscador-autos-js.netlify.app/"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Citas veterinaria",
       "img": "citas-vete.jpeg",
       "description": "Proyecto de registro de turnos para una veterinaria, Hecho principalmente con React JS.",
@@ -57,7 +65,7 @@
       "siteUrl": "https://citas-vete-react.netlify.app/"
     },
     {
-      "id": 8,
+      "id": 9,
       "title": "Carrito de compras",
       "img": "carrito.jpeg",
       "description": "Modelo de una academia online de cursos de programación, el objetivo fue maquetar el sitio principal con HTML y CSS y agregar la funcionalidad del carrito de compras con JavaScript.",
@@ -65,7 +73,7 @@
       "siteUrl": "https://beprogrammer.netlify.app/"
     },
     {
-      "id": 9,
+      "id": 10,
       "title": "Cotizador de criptomonedas",
       "img": "cripto.jpeg",
       "description": "Proyecto de cotización de criptomonedas a monedas físicas, se utilizó la API CryptoCompare y JavaScript.",
@@ -73,7 +81,7 @@
       "siteUrl": "https://cotizador-criptomonedas-lucas.netlify.app/"
     },
     {
-      "id": 10,
+      "id": 11,
       "title": "Cotizador de criptomonedas (React JS)",
       "img": "cripto-react.jpeg",
       "description": "Proyecto de cotización de criptomonedas a monedas físicas, se utilizó la API CryptoCompare y React JS.",
@@ -81,7 +89,7 @@
       "siteUrl": "https://criptomonedas-react-lucas.netlify.app/"
     },
     {
-      "id": 11,
+      "id": 12,
       "title": "Buscador de recetas de bebidas",
       "img": "bebidas.jpeg",
       "description": "Proyecto hecho React JS y consumiendo la API TheCocktailDB para consultar las recetas.",
@@ -89,7 +97,7 @@
       "siteUrl": "https://bebidas-react-lucas.netlify.app/"
     },
     {
-      "id": 12,
+      "id": 13,
       "title": "Frases de Breacking Bad",
       "img": "frases.jpeg",
       "description": "Obteniendo frases de Breaking Bad con React JS y consumiento la api Breakingbadquotes.",
@@ -97,7 +105,7 @@
       "siteUrl": "https://breaking-bad-lucas.netlify.app/"
     },
     {
-      "id": 13,
+      "id": 14,
       "title": "Control de presupuesto",
       "img": "gastos.jpg",
       "description": "Proyecto de control de presupuesto hecho con React JS.",
@@ -105,7 +113,7 @@
       "siteUrl": "https://gastos-react.netlify.app/"
     },
     {
-      "id": 14,
+      "id": 15,
       "title": "Turnos peluquería",
       "img": "peluqueria.jpeg",
       "description": "Proyecto de administración de turnos para una peluquería, con conexión a base de datos MySQL.",
@@ -113,7 +121,7 @@
       "siteUrl": "https://app-peluqueria-react.netlify.app/"
     },
     {
-      "id": 15,
+      "id": 16,
       "title": "Buscador GitHub Jobs",
       "img": "github.jpeg",
       "description": "Consumiento API de GitHub Jobs con React JS.",
@@ -121,7 +129,7 @@
       "siteUrl": "https://github-jobs-lucas.netlify.app/"
     },
     {
-      "id": 16,
+      "id": 17,
       "title": "Buscador de letras",
       "img": "letras.jpeg",
       "description": "Buscador de letras de canciones consumiento APIs lyrics y TheAudioDB con React JS.",
@@ -129,7 +137,7 @@
       "siteUrl": "https://buscador-letras-react-lucas.netlify.app/"
     },
     {
-      "id": 17,
+      "id": 18,
       "title": "Cotizador de seguros",
       "img": "seguros.jpeg",
       "description": "Cotizador de seguros para autos, tiene en cuenta el modelo, region del fabricante de la marca y tipo de plan. Hecho con React JS.",
@@ -137,7 +145,7 @@
       "siteUrl": "https://cotizador-seguros-react-lucas.netlify.app/"
     },
     {
-      "id": 18,
+      "id": 19,
       "title": "Festival de Rock",
       "img": "festival.jpeg",
       "description": "Proyecto utilizando HTML, SASS, JavaScript y funciones de Gulp.",
@@ -145,7 +153,7 @@
       "siteUrl": "https://festival-rock.netlify.app/"
     },
     {
-      "id": 19,
+      "id": 20,
       "title": "Gestión de alumnos",
       "img": "gestion.jpg",
       "description": "Gestión de alumnos e inscripciones para una universidad. Codificado en Java, librería Swing, MySQL como base de datos y usando el patrón MVC.",
