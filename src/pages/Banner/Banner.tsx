@@ -9,7 +9,7 @@ import { downloadPDF } from 'utils/helpers';
 
 const Banner = () => {
   return (
-    <div className='banner' id='home'>
+    <section className='banner' id='home'>
       <Blobs />
       <div className="contain">
         <h1>Portfolio</h1>
@@ -22,7 +22,7 @@ const Banner = () => {
           className='my-16'
         />
       </div>
-    </div>
+    </section>
   );
 };
 

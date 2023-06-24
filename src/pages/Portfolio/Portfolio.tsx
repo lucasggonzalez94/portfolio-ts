@@ -21,10 +21,10 @@ export const Portfolio = () => {
 			<Sidebar active={active} />
 			<Background />
 			<Banner />
-			<div className='about-me' id='about'>
+			<section className='about-me' id='about'>
 				<AboutMe />
 				<SkillList />
-			</div>
+			</section>
 			<Projects />
 			<Contact />
 			<Footer />

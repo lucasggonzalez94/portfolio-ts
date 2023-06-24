@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './Sidebar.scss';
 
@@ -7,31 +7,50 @@ type SidebarTypes = {
 	active: boolean;
 };
 
-const Sidebar: FC<SidebarTypes> = ({active}) => {
-	const location = useLocation();
-	const [selectedId, setSelectedId] = useState('home');
+const Sidebar: FC<SidebarTypes> = ({ active }) => {
+	const [activeSection, setActiveSection] = useState('');
 
-	const handleClick = (id: string) => {
-		setSelectedId(id);
-    const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo(0, element.offsetTop);
-    }
+	const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+		event.preventDefault();
+		const targetSection = event.currentTarget.getAttribute('data-section');
+		const targetElement = document.getElementById(targetSection || '');
+
+		if (targetElement) {
+			targetElement.scrollIntoView({ behavior: 'smooth' });
+		}
 	};
 
-  const toggleSidebar = (active: boolean) => {
-    const sidebar = document.getElementById('sidebar');
+	const toggleSidebar = (active: boolean) => {
+		const sidebar = document.getElementById('sidebar');
 		if (active) {
 			sidebar?.classList?.add('active');
 		} else {
 			sidebar?.classList?.remove('active');
 		}
-  };
+	};
 
 	useEffect(() => {
 		toggleSidebar(active);
 	}, [active]);
-	
+
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			entries => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						const idSection = entry.target.getAttribute('id') || '';
+						setActiveSection(idSection);
+					}
+				});
+			},
+			{ threshold: 0.2 }
+		);
+
+		const sections = document.querySelectorAll('section');
+		sections.forEach(section => observer.observe(section));
+
+		return () => observer.disconnect();
+	}, []);
 
 	return (
 		<nav className='sidebar' id='sidebar'>
@@ -39,12 +58,9 @@ const Sidebar: FC<SidebarTypes> = ({active}) => {
 				<li>
 					<Link
 						to='#home'
-						onClick={() => handleClick('home')}
-						className={
-							`link${location.hash === '#home' || selectedId === 'home'
-								? ' selected'
-								: ''}`
-						}
+						data-section='home'
+						onClick={e => handleClick(e)}
+						className={`link ${activeSection === 'home' ? 'selected' : ''}`}
 					>
 						Inicio
 					</Link>
@@ -52,12 +68,9 @@ const Sidebar: FC<SidebarTypes> = ({active}) => {
 				<li>
 					<Link
 						to='#about'
-						onClick={() => handleClick('about')}
-						className={
-							`link${location.hash === '#about' || selectedId === 'about'
-								? ' selected'
-								: ''}`
-						}
+						data-section='about'
+						onClick={e => handleClick(e)}
+						className={`link ${activeSection === 'about' ? 'selected' : ''}`}
 					>
 						Sobre mí
 					</Link>
@@ -65,12 +78,9 @@ const Sidebar: FC<SidebarTypes> = ({active}) => {
 				<li>
 					<Link
 						to='#projects'
-						onClick={() => handleClick('projects')}
-						className={
-							`link${location.hash === '#projects' || selectedId === 'projects'
-								? ' selected'
-								: ''}`
-						}
+						data-section='projects'
+						onClick={e => handleClick(e)}
+						className={`link ${activeSection === 'projects' ? 'selected' : ''}`}
 					>
 						Proyectos
 					</Link>
@@ -78,12 +88,9 @@ const Sidebar: FC<SidebarTypes> = ({active}) => {
 				<li>
 					<Link
 						to='#contact'
-						onClick={() => handleClick('contact')}
-						className={
-							`link${location.hash === '#contact' || selectedId === 'contact'
-								? ' selected'
-								: ''}`
-						}
+						data-section='contact'
+						onClick={e => handleClick(e)}
+						className={`link ${activeSection === 'contact' ? 'selected' : ''}`}
 					>
 						Contacto
 					</Link>

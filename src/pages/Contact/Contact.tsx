@@ -121,8 +121,8 @@ const Contact = () => {
 	};
 
 	return (
-		<>
-			<Container title='Contacto' id='contact'>
+		<section id='contact'>
+			<Container title='Contacto'>
 				<form onSubmit={handleSubmit} className='form-email'>
 					<Input
 						type='text'
@@ -189,7 +189,7 @@ const Contact = () => {
 				show={showAlertError}
 				setShow={setShowAlertError}
 			/>
-		</>
+		</section>
 	);
 };
 
