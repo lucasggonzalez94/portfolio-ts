@@ -26,8 +26,8 @@ const ProjectCard: FC<ProjectCardTypes> = ({
 		<div className='card'>
 			<img src={img} alt={title} />
 			<div className='content-card'>
-				<h3>{title}</h3>
-				<p>{description}</p>
+				<h3 className="non-selectable">{title}</h3>
+				<p className="non-selectable">{description}</p>
 				<div className='footer-card'>
 					{gitUrl ? (
 						<Button

@@ -4,6 +4,7 @@ import './SkillList.scss';
 const SkillList = () => {
 	const skills = [
 		{ name: 'React.js', level: 9 },
+		{ name: 'Angular JS', level: 8 },
 		{ name: 'JavaScript', level: 9 },
 		{ name: 'TypeScript', level: 8 },
 		{ name: 'CSS', level: 8 },
@@ -13,6 +14,7 @@ const SkillList = () => {
 		{ name: 'Nest.js', level: 6 },
 		{ name: 'Java', level: 5 },
 		{ name: 'MySQL', level: 6 },
+		{ name: 'Firebase', level: 7 },
 		{ name: 'JEST', level: 5 },
 		{ name: 'Git', level: 7 },
 		{ name: 'SCRUM', level: 7 },

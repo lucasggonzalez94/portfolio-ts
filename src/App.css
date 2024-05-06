@@ -47,6 +47,10 @@ section {
 	margin-right: 1rem;
 }
 
+.non-selectable {
+	user-select: none;
+}
+
 @media (max-width: 1000px) {
 	:root {
 		font-size: 13px;

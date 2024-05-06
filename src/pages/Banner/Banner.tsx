@@ -12,9 +12,9 @@ const Banner = () => {
     <section className='banner' id='home'>
       <Blobs />
       <div className="contain">
-        <h1>Portfolio</h1>
-        <h3>Lucas González</h3>
-        <h4>Desarrollador Web</h4>
+        <h1 className="non-selectable">Portfolio</h1>
+        <h3 className="non-selectable">Lucas González</h3>
+        <h4 className="non-selectable">Desarrollador Web</h4>
 
         <Button
           content="Descargar CV"

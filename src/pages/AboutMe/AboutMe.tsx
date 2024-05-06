@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <Container title="Sobre mí">
       <Text
-        text='Soy un desarrollador web altamente capacitado con casi 2 años de experiencia en el desarrollo de aplicaciones en tecnologías como React JS y Nest JS. Tengo experiencia en el trabajo dentro del marco de trabajo SCRUM y estoy comprometido a seguir aprendiendo y mejorando mis habilidades.'
+        text='Soy un desarrollador web altamente capacitado con mas de 3 años de experiencia en el desarrollo de aplicaciones en tecnologías de front-end como React JS, Nest JS, Angular JS, Node JS, entre otras. Tengo experiencia en el trabajo dentro del marco de trabajo SCRUM y estoy comprometido a seguir aprendiendo y mejorando mis habilidades.'
       />
       <Text
         text='Mi formación incluye estudios en la Universidad Tecnológica Nacional (UTN), donde adquirí una sólida base en programación, y también me he capacitado de forma autodidacta en plataformas como Udemy, aprendiendo las tecnologías necesarias para desempeñar mi trabajo con éxito.'
