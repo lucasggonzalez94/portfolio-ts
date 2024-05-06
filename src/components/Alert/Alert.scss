@@ -7,21 +7,22 @@
   min-height: 5rem;
   border-radius: .5rem;
   overflow: hidden;
+  z-index: 10000;
   &.success {
-    background: #40ff2f;
+    background: #32a85c;
     .icon {
-      background: #088808;
+      background: #054605;
       svg {
-        fill: #40ff2f;
+        fill: #32a85c;
       }
     }
   }
   &.error {
-    background: #ff2d2d;
+    background: #c94d4d;
     .icon {
-      background: #880808;
+      background: #611212;
       svg {
-        fill: #ff2d2d;
+        fill: #c94d4d;
       }
     }
     .messaje {
