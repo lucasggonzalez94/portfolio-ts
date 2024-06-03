@@ -8,16 +8,17 @@ const SkillList = () => {
 		{ name: 'JavaScript', level: 9 },
 		{ name: 'TypeScript', level: 8 },
 		{ name: 'CSS', level: 8 },
-		{ name: 'SASS', level: 7 },
+		{ name: 'SASS', level: 8 },
+		{ name: 'Tailwind', level: 8 },
 		{ name: 'HTML', level: 9 },
 		{ name: 'Node.js', level: 7 },
-		{ name: 'Nest.js', level: 6 },
+		{ name: 'Nest.js', level: 7 },
 		{ name: 'Java', level: 5 },
 		{ name: 'MySQL', level: 6 },
 		{ name: 'Firebase', level: 7 },
-		{ name: 'JEST', level: 5 },
+		{ name: 'JEST', level: 6 },
 		{ name: 'Git', level: 7 },
-		{ name: 'SCRUM', level: 7 }
+		{ name: 'SCRUM', level: 9 }
 	];
 
 	return (
