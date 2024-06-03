@@ -17,8 +17,7 @@ const SkillList = () => {
 		{ name: 'Firebase', level: 7 },
 		{ name: 'JEST', level: 5 },
 		{ name: 'Git', level: 7 },
-		{ name: 'SCRUM', level: 7 },
-		{ name: 'Inglés', level: 5 },
+		{ name: 'SCRUM', level: 7 }
 	];
 
 	return (
