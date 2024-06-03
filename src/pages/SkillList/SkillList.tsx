@@ -9,7 +9,7 @@ const SkillList = () => {
 		{ name: 'TypeScript', level: 8 },
 		{ name: 'CSS', level: 8 },
 		{ name: 'SASS', level: 8 },
-		{ name: 'Tailwind', level: 8 },
+		{ name: 'Tailwind CSS', level: 8 },
 		{ name: 'HTML', level: 9 },
 		{ name: 'Node.js', level: 7 },
 		{ name: 'Nest.js', level: 7 },
