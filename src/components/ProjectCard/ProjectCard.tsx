@@ -5,6 +5,7 @@ import './ProjectCard.scss';
 import { navigateToUrl } from 'utils/helpers';
 
 import Button from 'components/Button/Button';
+import Pill from 'components/Pill/Pill';
 
 type ProjectCardTypes = {
 	key: number;
@@ -13,6 +14,7 @@ type ProjectCardTypes = {
 	description: string;
 	gitUrl?: string;
 	siteUrl?: string;
+	skills: string[];
 };
 
 const ProjectCard: FC<ProjectCardTypes> = ({
@@ -20,7 +22,8 @@ const ProjectCard: FC<ProjectCardTypes> = ({
 	title,
 	description,
 	gitUrl,
-	siteUrl
+	siteUrl,
+	skills
 }) => {
 	return (
 		<div className='card'>
@@ -28,6 +31,11 @@ const ProjectCard: FC<ProjectCardTypes> = ({
 			<div className='content-card'>
 				<h3 className="non-selectable">{title}</h3>
 				<p className="non-selectable">{description}</p>
+				<div className="skills">
+					{skills.map((skill, i) => (
+						<Pill key={i+99} text={skill}/>
+					))}
+				</div>
 				<div className='footer-card'>
 					{gitUrl ? (
 						<Button

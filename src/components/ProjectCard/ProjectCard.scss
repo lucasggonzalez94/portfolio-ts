@@ -37,7 +37,6 @@
     }
 
     p {
-      height: 6.5rem;
       margin: 0;
       padding: 0;
       overflow: hidden;
@@ -48,6 +47,16 @@
       word-wrap: break-word;
       line-height: 1.3rem;
       font-size: .8rem;
+      text-align: start;
+      width: 100%;
+    }
+
+    .skills {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 1rem;
     }
 
     .footer-card {

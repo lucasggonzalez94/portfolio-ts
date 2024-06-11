@@ -4,81 +4,105 @@
       "id": 21,
       "title": "Nyx-Sys",
       "img": "nyx-sys.png",
-      "description": "Proyecto en el que trabajo actualmente como freelance, desarrollando una aplicación que muestra un dashboard con toda la información del sueño proveniente de un dispositivo físico. En este proyecto utilizo Angular JS, Firebase y Node JS",
+      "description": "Proyecto en el que trabajo actualmente como freelance, desarrollando una aplicación que muestra un dashboard con toda la información del sueño proveniente de un dispositivo físico.",
       "gitUrl": "",
-      "siteUrl": ""
+      "siteUrl": "",
+      "skills": [
+        "Angular",
+        "Firebase",
+        "Node.js"
+      ]
     },
     {
       "id": 20,
       "title": "Banco Galicia",
       "img": "galicia.png",
-      "description": "Proyecto en el que trabajo actualmente, desarrollando el módulo de transferencias para empresas. Utilizando React JS para el front y Nest JS para el BFF",
+      "description": "Proyecto en el que trabajo actualmente, desarrollando el módulo de transferencias para empresas.",
       "gitUrl": "",
-      "siteUrl": ""
+      "siteUrl": "",
+      "skills": [
+        "React.js",
+        "Nest.js"
+      ]
     },
     {
       "id": 19,
       "title": "Banco Galicia (Midas)",
       "img": "galicia.png",
-      "description": "Proyecto de backoffice de uso interno para Banco Galicia, en este proyecto trabajé en el módulo de configuración de límites. Utilizando React JS en el front.",
+      "description": "Proyecto de backoffice de uso interno para Banco Galicia, en este proyecto trabajé en el módulo de configuración de límites.",
       "gitUrl": "",
-      "siteUrl": ""
+      "siteUrl": "",
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 18,
       "title": "Backoffice Merck (Midas)",
       "img": "merck.jpg",
-      "description": "Proyecto backoffice de análisis de fármacos anticonceptivos en el cuál se le configuraban instrucciones para los instrumentos y se generaban reportes, gráficos, etc. Utilizando React JS en el front.",
+      "description": "Proyecto backoffice de análisis de fármacos anticonceptivos en el cuál se le configuraban instrucciones para los instrumentos y se generaban reportes, gráficos, etc.",
       "gitUrl": "",
-      "siteUrl": ""
+      "siteUrl": "",
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 17,
       "title": "MEDLOG (Midas)",
       "img": "medlog.jpg",
-      "description": "Proyecto de obtención y configuración de turnos para empresa transportadora de containers, desarrollo tanto para web pública, backoffice y tablet para el depósito. Utilizando React JS en el front.",
+      "description": "Proyecto de obtención y configuración de turnos para empresa transportadora de containers, desarrollo tanto para web pública, backoffice y tablet para el depósito.",
       "gitUrl": "",
-      "siteUrl": ""
+      "siteUrl": "",
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 16,
       "title": "YPF YClick",
       "img": "ypf.jpg",
-      "description": "Proyecto de backoffice para operarios de los pozos de YPF. Específicamente trabajé con el modulo de solicitud de servicios y materiales. Utilizando React JS en el front.",
+      "description": "Proyecto de backoffice para operarios de los pozos de YPF. Específicamente trabajé con el modulo de solicitud de servicios y materiales.",
       "gitUrl": "",
-      "siteUrl": ""
+      "siteUrl": "",
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 15,
       "title": "Calendar App",
       "img": "CalendarApp.jpg",
-      "description": "Proyecto de calendario donde se puede agregar eventos, utilizando React JS y Node.js",
+      "description": "Proyecto de calendario donde se puede agregar eventos.",
       "gitUrl": "https://github.com/lucasggonzalez94/calendar-app",
-      "siteUrl": "https://calendar-app-lucas.netlify.app/"
+      "siteUrl": "https://calendar-app-lucas.netlify.app/",
+      "skills": [
+        "React.js",
+        "Node.js"
+      ]
     },
     {
       "id": 14,
       "title": "Buscador de autos",
       "img": "buscador-autos.jpeg",
-      "description": "Buscador de autos obtenidos desde un objeto que simula una base de datos local, con distintos filtros de busqueda. Hecho con HTML, CSS y Javascript.",
+      "description": "Buscador de autos obtenidos desde un objeto que simula una base de datos local, con distintos filtros de búsqueda.",
       "gitUrl": "https://github.com/lucasggonzalez94/BuscadorDeAutos",
-      "siteUrl": "https://buscador-autos-js.netlify.app/"
+      "siteUrl": "https://buscador-autos-js.netlify.app/",
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 13,
       "title": "Citas veterinaria",
       "img": "citas-vete.jpeg",
-      "description": "Proyecto de registro de turnos para una veterinaria, Hecho principalmente con React JS.",
+      "description": "Proyecto de registro de turnos para una veterinaria.",
       "gitUrl": "https://github.com/lucasggonzalez94/CitasConReact",
       "siteUrl": "https://citas-vete-react.netlify.app/"
-    },
-    {
-      "id": 12,
-      "title": "Carrito de compras",
-      "img": "carrito.jpeg",
-      "description": "Modelo de una academia online de cursos de programación, el objetivo fue maquetar el sitio principal con HTML y CSS y agregar la funcionalidad del carrito de compras con JavaScript.",
-      "gitUrl": "https://github.com/lucasggonzalez94/carritoDeComprasPropio",
-      "siteUrl": "https://beprogrammer.netlify.app/"
+      ,
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 11,
@@ -86,39 +110,54 @@
       "img": "pixabay.jpg",
       "description": "Buscador de imagenes utilizando la API de Pixabay.",
       "gitUrl": "https://github.com/lucasggonzalez94/pixabay-react",
-      "siteUrl": "https://buscador-pixabay.netlify.app/"
+      "siteUrl": "https://buscador-pixabay.netlify.app/",
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 10,
-      "title": "Cotizador de criptomonedas (React JS)",
+      "title": "Cotizador de criptomonedas",
       "img": "cripto-react.jpeg",
-      "description": "Proyecto de cotización de criptomonedas a monedas físicas, se utilizó la API CryptoCompare y React JS.",
+      "description": "Proyecto de cotización de criptomonedas a monedas físicas, se utilizó la API CryptoCompare.",
       "gitUrl": "https://github.com/lucasggonzalez94/criptomonedas-react",
-      "siteUrl": "https://criptomonedas-react-lucas.netlify.app/"
+      "siteUrl": "https://criptomonedas-react-lucas.netlify.app/",
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 9,
       "title": "Buscador de recetas de bebidas",
       "img": "bebidas.jpeg",
-      "description": "Proyecto hecho React JS y consumiendo la API TheCocktailDB para consultar las recetas.",
+      "description": "Consumiendo la API TheCocktailDB para consultar las recetas.",
       "gitUrl": "https://github.com/lucasggonzalez94/bebidas",
-      "siteUrl": "https://bebidas-react-lucas.netlify.app/"
+      "siteUrl": "https://bebidas-react-lucas.netlify.app/",
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 8,
       "title": "Frases de Breacking Bad",
       "img": "frases.jpeg",
-      "description": "Obteniendo frases de Breaking Bad con React JS y consumiento la api Breakingbadquotes.",
+      "description": "Obteniendo frases de Breaking Bad consumiendo la API Breakingbadquotes.",
       "gitUrl": "https://github.com/lucasggonzalez94/breakingbad",
-      "siteUrl": "https://breaking-bad-lucas.netlify.app/"
+      "siteUrl": "https://breaking-bad-lucas.netlify.app/",
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 7,
       "title": "Control de presupuesto",
       "img": "gastos.jpg",
-      "description": "Proyecto de control de presupuesto hecho con React JS.",
+      "description": "Proyecto de control de presupuesto.",
       "gitUrl": "https://github.com/lucasggonzalez94/presupuestoReact",
-      "siteUrl": "https://gastos-react.netlify.app/"
+      "siteUrl": "https://gastos-react.netlify.app/",
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 6,
@@ -126,47 +165,56 @@
       "img": "peluqueria.jpeg",
       "description": "Proyecto de administración de turnos para una peluquería, con conexión a base de datos MySQL.",
       "gitUrl": "https://github.com/lucasggonzalez94/AppPeluqueria",
-      "siteUrl": "https://app-peluqueria-react.netlify.app/"
+      "siteUrl": "https://app-peluqueria-react.netlify.app/",
+      "skills": [
+        "React.js",
+        "SQL"
+      ]
     },
     {
       "id": 5,
       "title": "Buscador GitHub Jobs",
       "img": "github.jpeg",
-      "description": "Consumiento API de GitHub Jobs con React JS.",
+      "description": "Consumiendo API de GitHub Jobs.",
       "gitUrl": "https://github.com/lucasggonzalez94/GithubJobs",
-      "siteUrl": "https://github-jobs-lucas.netlify.app/"
+      "siteUrl": "https://github-jobs-lucas.netlify.app/",
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 4,
       "title": "Buscador de letras",
       "img": "letras.jpeg",
-      "description": "Buscador de letras de canciones consumiento APIs lyrics y TheAudioDB con React JS.",
+      "description": "Buscador de letras de canciones consumiendo la API lyrics y TheAudioDB.",
       "gitUrl": "https://github.com/lucasggonzalez94/letras-react",
-      "siteUrl": "https://buscador-letras-react-lucas.netlify.app/"
+      "siteUrl": "https://buscador-letras-react-lucas.netlify.app/",
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 3,
       "title": "Cotizador de seguros",
       "img": "seguros.jpeg",
-      "description": "Cotizador de seguros para autos, tiene en cuenta el modelo, region del fabricante de la marca y tipo de plan. Hecho con React JS.",
+      "description": "Cotizador de seguros para autos, tiene en cuenta el modelo, region del fabricante de la marca y tipo de plan.",
       "gitUrl": "https://github.com/lucasggonzalez94/cotizadorSeguros",
-      "siteUrl": "https://cotizador-seguros-react-lucas.netlify.app/"
-    },
-    {
-      "id": 2,
-      "title": "Festival de Rock",
-      "img": "festival.jpeg",
-      "description": "Proyecto utilizando HTML, SASS, JavaScript y funciones de Gulp.",
-      "gitUrl": "https://github.com/lucasggonzalez94/FestivalDeMusicaDeployment",
-      "siteUrl": "https://festival-rock.netlify.app/"
+      "siteUrl": "https://cotizador-seguros-react-lucas.netlify.app/",
+      "skills": [
+        "React.js"
+      ]
     },
     {
       "id": 1,
       "title": "Gestión de alumnos",
       "img": "gestion.jpg",
-      "description": "Gestión de alumnos e inscripciones para una universidad. Codificado en Java, librería Swing, MySQL como base de datos y usando el patrón MVC.",
+      "description": "Gestión de alumnos e inscripciones para una universidad, utilizando la librería Swing, y patrón MVC.",
       "gitUrl": "https://github.com/lucasggonzalez94/GestorInscripcionesUniversidad",
-      "siteUrl": ""
+      "siteUrl": "",
+      "skills": [
+        "Java",
+        "SQL"
+      ]
     }
   ]
 }

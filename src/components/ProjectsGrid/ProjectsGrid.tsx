@@ -16,6 +16,7 @@ const ProjectsGrid = () => {
           description={item.description}
           gitUrl={item.gitUrl}
           siteUrl={item.siteUrl}
+          skills={item.skills}
         />
       ))}
     </div>
