@@ -167,7 +167,7 @@ const Contact = () => {
 				<div className="icons">
 					<CustomLink
 						icon={<LinkedInLogo />}
-						url='https://www.linkedin.com/in/lucas-gonzalez-frontend'
+						url='https://www.linkedin.com/in/lucasgonzalezdeveloper'
 					/>
 					<CustomLink
 						icon={<GitHubLogo />}
