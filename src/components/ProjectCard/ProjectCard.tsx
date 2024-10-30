@@ -1,13 +1,6 @@
-import { FC, useState } from 'react';
+import { useState } from 'react';
 
 import './ProjectCard.scss';
-
-import { navigateToUrl } from 'utils/helpers';
-
-import Button from 'components/Button/Button';
-import Pill from 'components/Pill/Pill';
-import { ReactComponent as GitHub } from 'static/icons/github-light.svg';
-import { ReactComponent as WebSite } from 'static/icons/globe-solid.svg';
 
 type ProjectCardTypes = {
 	key: number;
