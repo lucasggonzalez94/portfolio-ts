@@ -1,29 +1,26 @@
-.skill-list {
-  display: flex;
-  flex-direction: column;
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+
+  svg {
+    height: 2rem;
+  }
 }
 
 .skill {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 0.625rem;
 }
 
 .skill-name {
   width: 6.25rem;
 }
 
-.skill-bar {
-  height: 1.2rem;
-  width: 12.5rem;
-  background-color: #afafaf;
-  margin-left: 0.625rem;
-  outline: 3px solid rgba(255, 255, 255, 0.5);
-  border-radius: 1rem;
-  overflow: hidden;
-}
-
-.skill-bar-fill {
-  height: 100%;
-  background-color: #4d0d91;
+@media (max-width: 570px) {
+	.skill-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
