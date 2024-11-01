@@ -22,8 +22,6 @@ export const ProjectCard = ({
 	siteUrl,
 	skills
 }: ProjectCardTypes) => {
-	const [expanded, setExpanded] = useState(false);
-
 	return (
 		<div className='project-card'>
 			<div className='image-container'>
@@ -31,14 +29,9 @@ export const ProjectCard = ({
 			</div>
 			<div className='content'>
 				<h2 className='title-card'>{title}</h2>
-				<p className={`description ${expanded ? 'expanded' : ''}`}>
+				<p className="description">
 					{description}
 				</p>
-				{description?.length > 100 && (
-					<button className='expand-btn' onClick={() => setExpanded(!expanded)}>
-						{expanded ? 'Ver menos' : 'Ver más'}
-					</button>
-				)}
 				<div className='skills'>
 					{skills?.map((skill, index) => (
 						<span key={index} className='skill-pill'>

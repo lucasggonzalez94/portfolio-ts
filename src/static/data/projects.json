@@ -47,7 +47,7 @@
     },
     {
       "id": 19,
-      "title": "Banco Galicia (Midas)",
+      "title": "Banco Galicia",
       "img": "galicia.png",
       "description": "Proyecto de backoffice de uso interno para Banco Galicia, en este proyecto trabajé en el módulo de configuración de límites.",
       "gitUrlFront": "",
@@ -59,7 +59,7 @@
     },
     {
       "id": 18,
-      "title": "Backoffice Merck (Midas)",
+      "title": "Backoffice Merck",
       "img": "merck.jpg",
       "description": "Proyecto backoffice de análisis de fármacos anticonceptivos en el cuál se le configuraban instrucciones para los instrumentos y se generaban reportes, gráficos, etc.",
       "gitUrlFront": "",
@@ -71,7 +71,7 @@
     },
     {
       "id": 17,
-      "title": "MEDLOG (Midas)",
+      "title": "MEDLOG",
       "img": "medlog.jpg",
       "description": "Proyecto de obtención y configuración de turnos para empresa transportadora de containers, desarrollo tanto para web pública, backoffice y tablet para el depósito.",
       "gitUrlFront": "",
